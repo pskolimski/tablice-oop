@@ -10,13 +10,13 @@ namespace PS_ZadanieTablice
             this.Numbers = numbers;
         }
 
-        public void DisplayItems()
+        public string toString()
         {
             string numbersString = String.Join(", ", Numbers);
-            Console.WriteLine(numbersString);
+            return numbersString;
         }
         
-        public void AddItem(double newItem)
+        public void addItem(double newItem)
         {
             double[] newNumbers = new double[Numbers.Length + 1];
             
@@ -29,7 +29,7 @@ namespace PS_ZadanieTablice
             Numbers = newNumbers;
         }
 
-        public void DeleteItem(int index)
+        public void deleteItem(int index)
         {
             if (index < 0 || index > Numbers.Length - 1)
             {
