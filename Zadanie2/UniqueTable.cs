@@ -2,11 +2,11 @@ using System;
 
 namespace Zadanie2
 {
-    public class StaticTable
+    public class UniqueTable
     {
         public double[] Numbers { get; set; }
         
-        public StaticTable(double[] numbers)
+        public UniqueTable(double[] numbers)
         {
             Numbers = numbers;
         }

@@ -6,7 +6,7 @@ namespace Zadanie2
     {
         public static void Main(string[] args)
         {
-            StaticTable numbers = new StaticTable(new double[3] { 1, 2, 3 });
+            UniqueTable numbers = new UniqueTable(new double[3] { 1, 2, 3 });
             
             Console.WriteLine("Tablica przed zmianami:");
             Console.WriteLine(numbers.toString());
